@@ -24,28 +24,41 @@
         <!-- Logo -->
         <div class="flex items-center">
             <img src=".\images\374-3749127_escudo-universidad-del-cauca-transparente-clipart.png" alt="Logo" class="h-8 w-8 mr-2">
-            <h1 class="text-2xl font-semibold">Mi Página Personal</h1>
-            <nav class="bg-blue-500 p-4">
-                <div class="container mx-auto flex justify-between items-center">
-        
-                    <!-- Botones de Navegación -->
-                    <div class="space-x-4 mx-auto">
-                        <a href="index.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Inicio</a>
-                        <a href="estudios.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Estudios</a>
-                        <a href="galery.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Galeria</a>
-                        <a href="contacto.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Contacto</a>
-                    </div>
-                </div>
-            </nav>
+            <h1 class="text-lg sm:text-2xl font-semibold">Mi Página Personal</h1>
         </div>
         
-        <!-- Botón de inicio -->
-        <a href="./index.html" class="text-2xl text-white hover:text-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15l-6-6-6 6m7-9v9"></path>
-            </svg>
-        </a>
+        <!-- Botón de menú para pantallas pequeñas -->
+        <div class="sm:hidden">
+            <button id="menu-toggle" class="text-2xl text-white hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Botones de Navegación (Ocultos por defecto, mostrados en pantallas pequeñas) -->
+        <nav id="nav-menu" class="hidden sm:block bg-blue-500 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="space-x-4 mx-auto">
+                    <a href="index.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Inicio</a>
+                    <a href="estudios.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Estudios</a>
+                    <a href="galery.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Galeria</a>
+                    <a href="contacto.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Contacto</a>
+                </div>
+            </div>
+        </nav>
     </header>
+    
+    <!-- JavaScript para manejar el menú desplegable -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+    
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+        });
+    </script>
+    
     <!-- Encabezado en la parte trasera del body -->
     <div class="background-header"></div>
     <!-- Contenido principal -->
