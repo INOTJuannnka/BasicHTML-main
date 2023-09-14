@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Información Personal</title>
+    <title>Julian Camilo Carvajal</title>
     <!-- Agregar enlaces a los estilos de Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
@@ -23,12 +23,24 @@
     <header class="bg-blue-500 text-white py-4 px-6 flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2">
+            <img src=".\images\374-3749127_escudo-universidad-del-cauca-transparente-clipart.png" alt="Logo" class="h-8 w-8 mr-2">
             <h1 class="text-2xl font-semibold">Mi Página Personal</h1>
+            <nav class="bg-blue-500 p-4">
+                <div class="container mx-auto flex justify-between items-center">
+        
+                    <!-- Botones de Navegación -->
+                    <div class="space-x-4 mx-auto">
+                        <a href="index.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Inicio</a>
+                        <a href="estudios.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Estudios</a>
+                        <a href="galery.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Galeria</a>
+                        <a href="contacto.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Contacto</a>
+                    </div>
+                </div>
+            </nav>
         </div>
         
         <!-- Botón de inicio -->
-        <a href="/" class="text-2xl text-white hover:text-gray-300">
+        <a href="./index.html" class="text-2xl text-white hover:text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15l-6-6-6 6m7-9v9"></path>
             </svg>
@@ -36,33 +48,29 @@
     </header>
     <!-- Encabezado en la parte trasera del body -->
     <div class="background-header"></div>
-
     <!-- Contenido principal -->
+    
+    <br>
+
     <div class="container mx-auto p-4 sm:p-6 md:max-w-md md:p-8 bg-white rounded-lg shadow-md relative">
         <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">Mi Información Personal</h1>
         <p class="text-gray-700 mb-4">¡Hola! Soy Julian, y esta es una página web de ejemplo que habla sobre mí.</p>
         
         <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">Sobre Mí</h2>
-        <p class="text-gray-700 mb-4">Soy un estudiante apasionado por los videojuegos. Nacido en Florencia Caquetá, ahora soy residente de la ciudad de Popayan, estudiante de la universidad del Cauca.</p>
-        <li><a href="galery.html" class="text-blue-500">Galería de Fotos</a></li>
-        
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 mt-4">Contacto</h2>
-        <p class="text-gray-700 mb-4">Puedes contactarme a través de mi correo electrónico: <a href="mailto:jucarvajal@unicauca.edu.co" class="text-blue-500">jucarvajal@unicauca.edu.co</a></p>
-        
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">Redes Sociales</h2>
-        <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li><a href="https://www.facebook.com/juliancamilo.carvajalmejia" class="text-blue-500">FaceBoock</a></li>
-            <li><a href="https://twitter.com/tu-usuario" class="text-blue-500">Twitter</a></li>
-            <!-- Agrega más enlaces a tus redes sociales si lo deseas -->
-        </ul>
-        
+        <p class="text-gray-700 mb-4">Soy un estudiante de septimo semestre de la universidad del Cauca apasionado por los videojuegos. Nacido en Florencia Caquetá, ahora soy residente de la ciudad de Popayan.</p>
+        <li><a href="galery.html" class="text-blue-500">Galería de Fotos</a></li>        
         <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">Habilidades</h2>
         <ul class="list-disc list-inside text-gray-700">
-            <li>[Habilidad 1]</li>
-            <li>[Habilidad 2]</li>
-            <li>[Habilidad 3]</li>
+            <li>Un poco de SQL</li>
+            <li>Tengo conocimientos basicos en el desarrollo de videojuegos</li>
             <!-- Agrega más habilidades si lo deseas -->
         </ul>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">ESTUDIOS</h1>
+        <li><span>Secundaria</span></li>
+        <li><span>Tecnico en el Sena</span></li>
+
     </div>
+    <br>
+    
 </body>
 </html>
